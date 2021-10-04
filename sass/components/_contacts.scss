@@ -1,0 +1,148 @@
+.social {
+  & {
+    display: flex;
+    align-items: center;
+  }
+
+  &__label {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.25;
+  }
+
+  &__list {
+    display: flex;
+  }
+  &__item {
+    &:nth-child(1) {
+      .social__link {
+        &::before {
+          content: '\e90c';
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      .social__link {
+        &::before {
+          content: '\e90a';
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      .social__link {
+        &::before {
+          content: '\e90b';
+        }
+      }
+    }
+  }
+
+  &__link {
+    font-size: 0;
+    transition: color 300ms ease;
+
+    &::before {
+      @include icomoon(40px);
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.phones {
+  &__item {
+    & {
+      display: flex;
+      align-items: baseline;
+    }
+    &:nth-child(1) {
+      .phones__link {
+        &::before {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 24px;
+          height: 24px;
+          content: '\e910';
+          color: inherit;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    transition: color 300ms ease;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+
+    &::before {
+      @include icomoon(24px);
+    }
+
+    &--theme--dark {
+      color: var(--accent-color);
+
+      &::before {
+        color: inherit;
+      }
+    }
+  }
+
+  &__arrow-down {
+    margin-left: 5px;
+  }
+}
+
+.address {
+  & {
+    margin-bottom: 15px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    transition: color 300ms ease;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+
+    &::before {
+      margin-right: 5px;
+      @include icomoon(24px);
+      content: '\e906';
+    }
+  }
+}
+
+.phones {
+  &__item {
+    &:not(:first-child) {
+      padding-left: 29px;
+    }
+  }
+}
+
+.social__label--bottom {
+  margin-bottom: 5px;
+}

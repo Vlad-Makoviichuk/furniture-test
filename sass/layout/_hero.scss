@@ -1,0 +1,122 @@
+.hero {
+  background-image: url('../img/hero/hero-bg.jpg');
+  background-repeat: no-repeat;
+  padding-bottom: 115px;
+}
+
+.hero-slider {
+  position: relative;
+  //   display: flex;
+  text-align: center;
+  width: 462px;
+  background-color: #ffffff;
+
+  &::before {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 15px;
+    height: 100%;
+    background-color: var(--accent-color);
+  }
+}
+
+.hero-slide {
+  & {
+    position: relative;
+    padding: 100px 75px 230px;
+  }
+
+  &__suptitle {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1;
+    animation-duration: 1500ms;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.25;
+  }
+
+  &__desc {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.25;
+  }
+
+  &__button {
+    max-width: 209px;
+  }
+}
+
+.swiper-navigation {
+  & {
+    position: absolute;
+    z-index: 5;
+    bottom: 100px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+    cursor: pointer;
+
+    &::before {
+      content: '\e90d';
+      @include icomoon(20px);
+    }
+
+    &--prev {
+      margin-right: 8px;
+      transform: rotate(90deg);
+    }
+
+    &--next {
+      transform: rotate(-90deg);
+      background-color: var(--text-color);
+
+      &::before {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.swiper-pagination {
+  margin-bottom: 5px;
+  position: static;
+  width: 100%;
+  font-family: var(--main-ff);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+  color: #1e2e36;
+
+  &-total {
+    font-size: 24px;
+  }
+
+  &-current {
+    font-size: 36px;
+  }
+}

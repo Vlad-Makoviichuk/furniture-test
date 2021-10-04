@@ -1,0 +1,43 @@
+.about-us {
+  &__inner {
+    background-image: url('../img/about-us/about-us-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    padding: 100px 50px 100px 0px;
+    margin-right: -50px;
+  }
+
+  &__text-wrapper {
+    position: relative;
+    padding: 50px;
+    margin-left: -50px;
+    width: 791px;
+    height: 475px;
+    background-color: #ffffff;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 15px;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background-color: var(--accent-color);
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.25;
+
+    span {
+      color: var(--accent-color);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}

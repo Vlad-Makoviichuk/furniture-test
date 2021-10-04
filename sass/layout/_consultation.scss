@@ -1,0 +1,67 @@
+.consultation {
+  &__inner {
+    padding: 100px 0px 118px 50px;
+    margin-left: -50px;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url('../img/consultation/consultation-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left bottom;
+  }
+}
+
+.consultation-form {
+  & {
+    padding: 50px;
+    margin-right: -50px;
+    width: 528px;
+    background-color: #ffffff;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 125%;
+  }
+
+  &__input {
+    padding: 14px;
+    margin-bottom: 15px;
+    width: 432px;
+    max-height: 51px;
+    border: 1px solid #1e2e36;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.25;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      border-color: var(--accent-color);
+    }
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.25;
+    }
+  }
+
+  &__button {
+    margin-bottom: 30px;
+    min-width: 432px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.25;
+    max-width: 395px;
+
+    span {
+      font-weight: 700;
+    }
+  }
+}

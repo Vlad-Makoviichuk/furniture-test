@@ -1,0 +1,27 @@
+.logo {
+  & {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    margin-right: 15px;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.25;
+    color: var(--text-color);
+
+    span {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.logo {
+  &__text--dark-theme {
+    color: #ffffff;
+  }
+}

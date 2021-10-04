@@ -1,0 +1,130 @@
+.features-slide {
+  &:hover {
+    .features-slide__text-wrapper {
+      transform: translateY(0);
+    }
+
+    .features-slide__label {
+      transform: translateY(0);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: unset;
+  }
+
+  &__label {
+    margin-bottom: 18px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.25;
+    color: #ffffff;
+    cursor: pointer;
+    transform: translateY(calc(-100% - 51px));
+    transition: transform 300ms ease;
+
+    span {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: '';
+        width: 100%;
+        height: 3px;
+        background-color: var(--accent-color);
+      }
+    }
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.25;
+    color: #ffffff;
+  }
+
+  &__img-wrapper {
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        0deg,
+        rgba(30, 46, 54, 0.5),
+        rgba(30, 46, 54, 0.5)
+      );
+    }
+  }
+
+  &__text-wrapper {
+    padding: 30px 33px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: transform 300ms ease;
+  }
+}
+
+.features-slider {
+  & {
+    position: relative;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+    cursor: pointer;
+
+    &::before {
+      content: '\e90d';
+      @include icomoon(20px);
+    }
+
+    &--prev {
+      position: absolute;
+      z-index: 5;
+      top: 50%;
+      left: 15px;
+      margin-right: 8px;
+      transform: translateY(-50%);
+      color: #ffffff;
+      border-color: #ffffff;
+
+      &::before {
+        transform: rotate(90deg);
+      }
+    }
+
+    &--next {
+      position: absolute;
+      z-index: 5;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+      background-color: #ffffff;
+      border: none;
+
+      &::before {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}

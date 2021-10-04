@@ -1,0 +1,88 @@
+.button {
+  padding: 14px 46px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  border: none;
+  cursor: pointer;
+  max-width: 278px;
+
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(
+      to right,
+      #0ba360,
+      #3cba92,
+      #30dd8a,
+      #2bb673
+    );
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+    background-position: 100% 0;
+
+    outline: none;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+.button-card {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    margin-right: 5px;
+    @include icomoon(30px);
+    content: '\e90e';
+  }
+}
+
+.arrow-down {
+  display: block;
+  transform: translateY(1px);
+  cursor: pointer;
+  &::after {
+    @include icomoon(24px);
+    content: '\e90d';
+    color: var(--text-color);
+  }
+}
+
+.scroll-up__button {
+  position: fixed;
+  z-index: 100;
+  left: 35px;
+  bottom: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  cursor: pointer;
+  opacity: 0;
+
+  &::before {
+    @include icomoon(20);
+    content: '\e901';
+  }
+}
+
+.fixed {
+  opacity: 1;
+}

@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?v70dio');
+  src:  url('fonts/icomoon.eot?v70dio#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?v70dio') format('truetype'),
+    url('fonts/icomoon.woff?v70dio') format('woff'),
+    url('fonts/icomoon.svg?v70dio#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-iphone_96622:before {
+  content: "\e910";
+  color: #757575;
+}
+.icon-armchair:before {
+  content: "\e900";
+}
+.icon-arrow:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-bedroom:before {
+  content: "\e902";
+  color: #44c697;
+}
+.icon-calendar:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-kitchen:before {
+  content: "\e904";
+}
+.icon-living-room:before {
+  content: "\e905";
+}
+.icon-map-pin:before {
+  content: "\e906";
+  color: #fff;
+}
+.icon-Vector2:before {
+  content: "\e907";
+  color: #ffd001;
+}
+.icon-wardrobe-1-1:before {
+  content: "\e908";
+}
+.icon-wardrobe-1:before {
+  content: "\e909";
+}
+.icon-Facebook:before {
+  content: "\e90a";
+}
+.icon-Instagram:before {
+  content: "\e90b";
+}
+.icon-Telegram:before {
+  content: "\e90c";
+}
+.icon-chevron-right:before {
+  content: "\e90d";
+}
+.icon-shopping-cart-1:before {
+  content: "\e90e";
+}
